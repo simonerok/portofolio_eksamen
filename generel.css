@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/******************* CUSTOM PROPERTIES *****************/
+html {
+  --primary-color: #a8b9d3dd;
+  --secondary-color: #efaac9d1;
+  --baggrund-color: #efaac9d1;
+}
+/******************* IKON *****************/
+#ikon {
+  max-width: 80px;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  padding-bottom: 20px;
+}
+/******************* HEADER OG MENU *****************/
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--secondary-color);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-family: "Varela", sans-serif;
+  font-size: 1rem;
+}
+
+.menupunkter {
+  list-style-type: none;
+}
+
+.menupunkter,
+li {
+  display: inline-block;
+  padding: 1.2rem 1rem;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+/******************* BURGERMENU *****************/
+
+/******************* TEKST *****************/
+p {
+  font-family: "Varela", sans-serif;
+}
+
+h1 {
+  font-family: "Varela", sans-serif;
+}
+
+h2 {
+  font-family: "Varela", sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+h3 {
+  font-family: "Varela", sans-serif;
+  font-size: 0.8rem;
+}
+
+/******************* FOOTER *****************/
+footer {
+  font-size: 15px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.footerp {
+  font-family: "Varela", sans-serif;
+  max-width: none;
+  position: sticky;
+  font-style: italic;
+  font-size: 13px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-left: 45px;
+  color: white;
+}
+
+/******************* LAYOUT *****************/
+
+/******************* GENEREL FOR MOBIL *****************/
+
+@media (max-width: 600px) {
+  #ikon {
+    width: 3rem;
+  }
+  .menupunkter {
+    padding-block: 5rem;
+  }
+
+  .menu a {
+    padding-block: 5rem;
+  }
+  section {
+    margin: 20px;
+  }
+}
+
+/******************* FOOTER MOBIL *****************/
+@media (max-width: 600px) {
+  .mit_arbejde {
+    font-size: 13px;
+    color: white;
+  }
+  .menupunkter,
+  li {
+    padding: 5px;
+    font-size: 13px;
+  }
+  h3 {
+    color: white;
+  }
+}
+
+/******************* MOBIL 02 HTML *****************/
+@media (max-width: 600px) {
+  .container_hvid {
+    display: grid;
+    padding: 10px;
+  }
+  .container_pink {
+    display: grid;
+    padding: 10px;
+    background-color: var(--baggrund-color);
+    color: white;
+  }
+  .flex_col3 {
+    order: -1;
+  }
+
+  .flex_col4 {
+    order: -1;
+  }
+
+  .flex_col7 {
+    order: -1;
+  }
+}
+
+/****************** 04 animation *****************/
+.container_04 {
+  display: flex;
+}
+
+.galleri_04 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.introskaerm {
+  grid-template-columns: 1/3;
+  grid-template-rows: 1/3;
+}
+
+.karakterdesign {
+  grid-template-columns: 3/4;
+  grid-template-rows: 1/2;
+}
+
+.blyant_skitse {
+}
+
+.rentegning {
+}
+
+/******************* MOBIL 04 animation *****************/
+@media (max-width: 600px) {
+  .container_04 {
+    display: grid;
+  }
+
+  section {
+    margin: 1.5rem 2rem;
+  }
+  figure {
+    padding-inline: 1.5rem;
+  }
+
+  .h1 {
+    padding-bottom: 15px;
+  }
+  .h2 {
+    max-width: 25ch;
+    padding-bottom: 20px;
+  }
+}
