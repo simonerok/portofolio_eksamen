@@ -12,42 +12,78 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="banner">
       <a href="index.html"> <img src="favicon.svg" alt="ikon" id="ikon" /></a>
       <nav class="menu">
+        <button class="toggle-btn">Menu</button>
         <ul class="menupunkter" id="menupunkter">
           <li><a href="02_html.html">Web</a></li>
           <li><a href="03_ux.html">UX</a></li>
           <li><a href="04_animation.html">Animation</a></li>
           <li><a href="05_indhold.html">Indhold</a></li>
+          <li><a href="06_portofolio.html">Portefølje</a></li>
+          <li><a href="ommig.html">Om mig</a></li>
         </ul>
       </nav>
     </header>
-
     <main>
       <section>
-        <div class="tekst_03">
-          <div class="tekstsiden">
+        <div class="container_hvid">
+          <div class="flex_col1">
+            <h1>UX</h1>
+            <p>I tema 3 blev vi præsenteret for research, prototype og test af prototypen. I researchfasen lærte vi om metoderne mindmap og desk research som er behandling af sekundære data som kan laves ved skrivebordet. For at få en endnu bedre forståelse af brugeren fik vi viden om hvordan man kan bruge og lave et godt spørgeskema med både åbne og lukkede spørgsmål. Vi fik også en guide til at lave et semi-struktureret interview med plads til at den interviewede person kunne uddybe sine svar.</p>
+          </div>
+          <div class="flex_col2">
+            <figure class="billede_research">
+              <img src="03/udklip_research.webp" alt="research et billede" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container_pink">
+          <div class="flex_col3">
+            <figure class="prototype1">
+              <img src="03/prototype_1.webp" alt="kodestykke" />
+            </figure>
+          </div>
+          <div class="flex_col4">
+            <h1>Proces</h1>
+            <p>I forbindelse med prototype opgaven fik vi en forståelse for hvordan man kan lave et design via styletile og moodboard samt flere forskellige små øvelser der kunne fremme den kreative proces. Design sprints som indebærer bl.a. lightning demos og crazy 8 samt solution sketch som samler alt fra de forrige test så det bliver som afspejler det man bedst kan lide fra alle sine skitser. I dette forløb har vi lært at bruge adobe XD som vi har lavet prototypen i. Udvalgte billeder er redigeret i photoshop, som vi også har fået en gennemgang af.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container_hvid">
+          <div class="flex_col1">
             <h1>Prototype 2</h1>
             <p>Jeg har lavet research og idegenreret for at komme frem til den første prototype. Her lavede jeg mindmap på fx tie dyes oprindelse og generelt for t få større viden om mit udvalgte emne tie dye. Ud fra researchen, et moodboard og styletile lavede jeg en prototype i Adobe XD som viser hvordan en hjemmeside der skal sælge t-shirts kan se ud med call to action knapper der skal forbedre brugeroplevelsen. Prototypen har jeg efterfølgende testet via tænke højt test. Resultatet afslørende nogle ændringer der kunne laves for at gøre det mere brugervenligt. Derfor er der i den endelige prototype nøje udvalgt og placeret tekst (copy, microcopy og tagline) samt billeder for det visuelle udtryk.</p>
-
-            <h2>Ux pitch deck</h2>
+          </div>
+          <div class="flex_col2">
+            <figure class="prototype2">
+              <img src="03/prototype_2 .webp" alt="proto2" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container_pink">
+          <div class="flex_col3">
+            <figure class="prototype1">
+              <img src="03/moodboard.webp" alt="moodboard" />
+            </figure>
+          </div>
+          <div class="flex_col4">
+            <h1>Ux pitch deck</h1>
             <p>Endeligt har jeg lært at pitche som kan bruges for en eventuel arbejdsgiver eller kunde. Det er vigtigt at kunne sælge sit produkt eller ide og præsentere det på fordelagtig måde fx at præsentere et problem og derefter en mulig løsning.</p>
           </div>
         </div>
       </section>
-      <figure>
-        <div class="galleri_4">
-          <div class="grid_4">
-            <img src="05/premiere_eksempel.webp" alt="premiere" />
-            <img src="05/pilot_site.webp" alt="premiere" />
-            <img src="05/redesign_kraess.webp" alt="premiere" />
-          </div>
-        </div>
-      </figure>
     </main>
+
     <footer>
       <p class="footerp">© Sofia Simone Rokkedal</p>
     </footer>
+    <script src="java.js"></script>
   </body>
 </html>

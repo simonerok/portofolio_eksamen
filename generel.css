@@ -16,8 +16,7 @@ img {
 /******************* CUSTOM PROPERTIES *****************/
 html {
   --primary-color: #a8b9d3dd;
-  --secondary-color: #efaac9d1;
-  --baggrund-color: #efaac9d1;
+  --secondary-color: #efaac9d3;
 }
 /******************* IKON *****************/
 #ikon {
@@ -25,7 +24,7 @@ html {
   position: absolute;
   top: 1%;
   left: 1%;
-  padding-bottom: 20px;
+  padding: 20px 0px 0px 5px;
 }
 /******************* HEADER OG MENU *****************/
 header {
@@ -65,6 +64,71 @@ li {
 
 /******************* BURGERMENU *****************/
 
+/* header */
+.banner {
+  background: var(--secondary-color);
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 10px;
+}
+
+/* burgermenu */
+.toggle-btn {
+  background: transparent;
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  /* Skjuler menu-knappen når den ikke er trykket på */
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .toggle-btn {
+    /* Viser knap i mobilformat = 600px */
+    display: block;
+  }
+
+  .menu {
+    /* Fjerner den anden menu når burgermenuen vises, men viser stadig børnene */
+    display: contents;
+  }
+
+  .menu ul {
+    /* Fjerner menupunkterne når burger-menuen ikke bliver vist */
+    display: none;
+  }
+
+  .menu.shown ul {
+    /* Vis menupunkterne, når klassen ".shown" er til stede */
+    border-top: 1px solid #000;
+
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+  .menu.shown ul li {
+    /* Vis menu-listen, når klassen ".shown" er til stede */
+    flex-flow: column;
+    margin-left: auto;
+  }
+}
+
 /******************* TEKST *****************/
 p {
   font-family: "Varela", sans-serif;
@@ -85,12 +149,20 @@ h3 {
   font-size: 0.8rem;
 }
 
+h4 {
+  font-family: "Varela", sans-serif;
+  font-size: 3rem;
+  text-shadow: 5px 5px 10px var(--primary-color);
+  color: white;
+}
+
 /******************* FOOTER *****************/
 footer {
   font-size: 15px;
   text-align: center;
   background-color: var(--primary-color);
   color: white;
+  padding-bottom: 30px;
 }
 
 .footerp {
@@ -104,23 +176,59 @@ footer {
   text-align: center;
   margin-left: 45px;
   color: white;
+  margin-right: 3%;
+}
+.mine_fagligheder {
+  padding-block: 10px;
+}
+/******************* LAYOUT *****************/
+
+/******************* SPLASH FORSIDE *****************/
+.splash {
+  background-image: url(forside/arkitektur.webp);
+  height: 45.25vw;
+  width: 100%;
+  background-size: cover;
+  background-position: 100%;
+  margin: 0px;
 }
 
-/******************* LAYOUT *****************/
+.forside_tekst {
+  position: absolute;
+  padding: 150px;
+  transform: rotate(-180deg);
+}
+
+.forside_tekst2 {
+  padding: 100px;
+}
+
+/******************* 02 WEB *****************/
+.container_hvid {
+  display: flex;
+}
+
+.billede_responsive_web {
+  padding-block: 40px;
+  padding-inline: 20px;
+}
+
+.flex_col1 {
+  padding: 20px;
+}
+
+/******************* MOBIL *****************/
 
 /******************* GENEREL FOR MOBIL *****************/
 
 @media (max-width: 600px) {
   #ikon {
-    width: 3rem;
+    padding: 20px 0px 0px 15px;
   }
   .menupunkter {
     padding-block: 5rem;
   }
 
-  .menu a {
-    padding-block: 5rem;
-  }
   section {
     margin: 20px;
   }
@@ -140,9 +248,21 @@ footer {
   h3 {
     color: white;
   }
+
+  .mit_arbejde li {
+    padding: 5px;
+  }
 }
 
-/******************* MOBIL 02 HTML *****************/
+/******************* MOBIL SPLASH  *****************/
+@media (orientation: portrait) and (min-width: 600px) {
+  .splash {
+    width: 100%;
+    height: 90.25vw;
+  }
+}
+
+/******************* MOBIL 02-06 *****************/
 @media (max-width: 600px) {
   .container_hvid {
     display: grid;
@@ -151,66 +271,42 @@ footer {
   .container_pink {
     display: grid;
     padding: 10px;
-    background-color: var(--baggrund-color);
+    background-color: var(--secondary-color);
     color: white;
   }
-  .flex_col3 {
-    order: -1;
+
+  h1 {
+    padding-bottom: 15px;
+  }
+  .flex_col1 {
+    padding-bottom: 20px;
+  }
+  .flex_col4 {
+    padding-bottom: 20px;
   }
 
   .flex_col4 {
     order: -1;
   }
-
   .flex_col7 {
     order: -1;
   }
-}
-
-/****************** 04 animation *****************/
-.container_04 {
-  display: flex;
-}
-
-.galleri_04 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.introskaerm {
-  grid-template-columns: 1/3;
-  grid-template-rows: 1/3;
-}
-
-.karakterdesign {
-  grid-template-columns: 3/4;
-  grid-template-rows: 1/2;
-}
-
-.blyant_skitse {
-}
-
-.rentegning {
-}
-
-/******************* MOBIL 04 animation *****************/
-@media (max-width: 600px) {
-  .container_04 {
-    display: grid;
-  }
-
   section {
     margin: 1.5rem 2rem;
   }
   figure {
-    padding-inline: 1.5rem;
+    padding-inline: 1rem;
   }
-
   .h1 {
     padding-bottom: 15px;
   }
   .h2 {
     max-width: 25ch;
     padding-bottom: 20px;
+  }
+
+  .tekst_04 {
+    padding-bottom: 20px;
+    padding-inline: 20px;
   }
 }

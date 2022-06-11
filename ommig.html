@@ -9,18 +9,56 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="banner">
       <a href="index.html"> <img src="favicon.svg" alt="ikon" id="ikon" /></a>
-
-      <nav></nav>
+      <nav class="menu">
+        <button class="toggle-btn">Menu</button>
+        <ul class="menupunkter" id="menupunkter">
+          <li><a href="02_html.html">Web</a></li>
+          <li><a href="03_ux.html">UX</a></li>
+          <li><a href="04_animation.html">Animation</a></li>
+          <li><a href="05_indhold.html">Indhold</a></li>
+          <li><a href="06_portofolio.html">Portefølje</a></li>
+          <li><a href="ommig.html">Om mig</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main></main>
+    <main>
+      <section>
+        <div class="flex_col">
+          <figure class="PB">
+            <img src="om_mig/pb_1.jpg" alt="profil billede" />
+          </figure>
+          <article class="boks2">
+            <h1>Om mig</h1>
+            <p>tekststykke</p>
+          </article>
+          <figure class="boks3">
+            <p>tekststykke</p>
+          </figure>
+        </div>
+      </section>
+    </main>
     <footer>
+      <h3 class="mine_fagligheder">Mine fagligheder:</h3>
+      <ul class="mit_arbejde">
+        <li><p>HTML</p></li>
+        <li><p>CSS</p></li>
+        <li><p>JAVASCRIPT</p></li>
+        <li><p>PS</p></li>
+        <li><p>ILLUSTRATOR</p></li>
+        <li><p>XD</p></li>
+        <li><p>PREMIERE PRO</p></li>
+        <li><p>AUDITION</p></li>
+      </ul>
       <p class="footerp">© Sofia Simone Rokkedal</p>
     </footer>
+    <script src="java.js"></script>
   </body>
 </html>
