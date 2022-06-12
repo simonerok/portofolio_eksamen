@@ -4,7 +4,7 @@
 }
 
 main {
-  max-width: 1920px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
@@ -20,11 +20,10 @@ html {
 }
 /******************* IKON *****************/
 #ikon {
-  max-width: 80px;
-  position: absolute;
+  max-width: 70px;
+  position: relative;
   top: 1%;
   left: 1%;
-  padding: 20px 0px 0px 5px;
 }
 /******************* HEADER OG MENU *****************/
 header {
@@ -162,7 +161,7 @@ footer {
   text-align: center;
   background-color: var(--primary-color);
   color: white;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .footerp {
@@ -181,7 +180,15 @@ footer {
 .mine_fagligheder {
   padding-block: 10px;
 }
-/******************* LAYOUT *****************/
+/******************* LAYOUT (DESKTOP)*****************/
+
+section {
+  padding-bottom: 5px;
+}
+
+p {
+  width: 65ch;
+}
 
 /******************* SPLASH FORSIDE *****************/
 .splash {
@@ -204,17 +211,89 @@ footer {
 }
 
 /******************* 02 WEB *****************/
+/*HVID CONTAINER */
 .container_hvid {
   display: flex;
 }
 
 .billede_responsive_web {
-  padding-block: 40px;
-  padding-inline: 20px;
+  padding: 20px;
 }
 
 .flex_col1 {
   padding: 20px;
+}
+
+/*PINK CONTAINER */
+.container_pink {
+  display: flex;
+  background-color: var(--secondary-color);
+}
+
+.kodestykke {
+  padding: 36px;
+}
+
+.flex_col4 {
+  padding: 30px;
+}
+
+/******************* 03 UX *****************/
+/*HVID CONTAINER */
+.billede_research {
+  padding: 20px;
+  padding-top: 20px;
+}
+
+.prototype2 {
+  padding: 45px;
+}
+
+/*PINK CONTAINER */
+.prototype1 {
+  padding: 45px;
+}
+
+.flex_col4 {
+  padding: 40px;
+}
+
+/******************* 04 ANIMATION *****************/
+/*HVID CONTAINER */
+.billede_rentegning {
+  padding: 20px;
+  padding-top: 20px;
+  width: 80%;
+  height: 80%;
+}
+
+.introskaerm {
+  padding: 25px;
+}
+
+/*PINK CONTAINER */
+.blyantskitse {
+  padding: 45px;
+}
+
+.blyantskitse_titel {
+  padding: 45px;
+}
+
+/******************* 04 ANIMATION *****************/
+/*HVID CONTAINER */
+.billede_premiere {
+  padding: 20px;
+  padding-top: 20px;
+}
+
+.redesgin {
+  padding: 25px;
+}
+
+/*PINK CONTAINER */
+.pilotsite {
+  padding: 45px;
 }
 
 /******************* MOBIL *****************/
@@ -231,6 +310,33 @@ footer {
 
   section {
     margin: 20px;
+  }
+}
+
+p {
+  width: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+/******************* SPLASH MOBIL *****************/
+@media (max-width: 600px) {
+  .forside_tekst {
+    position: absolute;
+    padding: 125px;
+    transform: rotate(-180deg);
+    font-size: 40px;
+  }
+
+  .forside_tekst2 {
+    padding: 80px;
+    font-size: 40px;
+  }
+  .splash {
+    width: 100%;
+    height: 150.25vw;
   }
 }
 
@@ -251,14 +357,6 @@ footer {
 
   .mit_arbejde li {
     padding: 5px;
-  }
-}
-
-/******************* MOBIL SPLASH  *****************/
-@media (orientation: portrait) and (min-width: 600px) {
-  .splash {
-    width: 100%;
-    height: 90.25vw;
   }
 }
 
