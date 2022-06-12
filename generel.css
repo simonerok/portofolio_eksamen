@@ -280,7 +280,7 @@ p {
   padding: 45px;
 }
 
-/******************* 04 ANIMATION *****************/
+/******************* 05 INDHOLD *****************/
 /*HVID CONTAINER */
 .billede_premiere {
   padding: 20px;
@@ -293,6 +293,21 @@ p {
 
 /*PINK CONTAINER */
 .pilotsite {
+  padding: 45px;
+}
+
+/******************* 06 PORTFOLIO *****************/
+/*HVID CONTAINER */
+.inspo_layout {
+  padding: 30px;
+}
+.colorwheel {
+  padding: 20px;
+}
+
+/*PINK CONTAINER */
+
+.inspo_temaer {
   padding: 45px;
 }
 
