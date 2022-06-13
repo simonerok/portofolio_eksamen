@@ -1,28 +1,30 @@
-// Lav variablen "btn", der henviser til ".toggle-btn"
+// En variabel som vi kan referer til som toggle-btn senere
+
 const btn = document.querySelector(".toggle-btn");
-// Lav variablen "menu", der henviser til ".main-menu"
+// Variabel til ".main-menu"
 const menu = document.querySelector(".menu");
 
-// Lav funktionen "toggleMenu()" med følgende funktionalitet
+// Funktion kaldet togglemenu
 function toggleMenu() {
-  // a) toggle klassen "shown" på menu vha. classList.toggle
+  // ClassList.toggle gør at menu at der sker noget når klassen bliver vist (shown)
   menu.classList.toggle("shown");
 
-  // b) lav variablen "menuShown", som siger, at menu-variablen indeholder klassen "shown" via classList.contains("")
+  // Variablen menuShown skal indeholde shown -brug ClassList contains
   const menuShown = menu.classList.contains("shown");
 
-  // c) spørg om "menuShown" i if-sætningen nedenfor (=> if (menuShown)), og udskift teksten
+  // Bruger if sætning til at spørge om funktionen er shown eller ej
   if (menuShown) {
-    console.log(menuShown); // se i konsollen
-    // sæt btn.textContent til "Luk", hvis menuShown er "true"
+    console.log(menuShown);
+
+    // menuen skal lukke hvis menuShown er til stede (true) -textcontent er det der bliver vist på hjemmesiden og som man kan trykke på for at lukke burgermenun
     btn.textContent = "Luk";
   } else {
-    console.log(menuShown); // se i konsollen
-    // sæt btn.textContent til "Menu", hvis menuShown er "false"
+    console.log(menuShown);
+
+    // luk bliver til menu hvis menuShown ikke er til stede (false)
     btn.textContent = "Menu";
   }
 }
-// "toggleMenu()" slutter her
 
-// Tilføj et klik-event til "btn", der sætter toggleMenu-funktionen i gang
+// lytter efter klik til "knappen" menu. dette starter funktionen
 btn.addEventListener("click", toggleMenu);
