@@ -1,6 +1,8 @@
 // En variabel som vi kan referer til som toggle-btn senere
 
 const btn = document.querySelector(".toggle-btn");
+
+const btn_img = document.querySelector(".btn_img");
 // Variabel til ".main-menu"
 const menu = document.querySelector(".menu");
 
@@ -16,13 +18,13 @@ function toggleMenu() {
   if (menuShown) {
     console.log(menuShown);
 
-    // menuen skal lukke hvis menuShown er til stede (true) -textcontent er det der bliver vist på hjemmesiden og som man kan trykke på for at lukke burgermenun
-    btn.textContent = "Luk";
+    btn_img.src = "kryds.svg";
+    //hvis der bliver trykket på knappen så den toggler bliver billedet af krydset vist
   } else {
     console.log(menuShown);
 
-    // luk bliver til menu hvis menuShown ikke er til stede (false)
-    btn.textContent = "Menu";
+    //  bliver til burgermenu ikonet igen hvis menuShown ikke er til stede (false)
+    btn_img.src = "burger_ikon.svg";
   }
 }
 
