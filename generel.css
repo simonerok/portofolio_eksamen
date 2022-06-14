@@ -380,20 +380,26 @@ footer {
 /******************* 06 PORTFOLIO *****************/
 /*HVID CONTAINER */
 .inspo_layout {
-  padding: 30px;
+  padding: 0px;
+  padding-left: 20px;
+  max-width: 500px;
 }
 .colorwheel {
-  padding: 20px;
+  padding: 0px;
+  padding-left: 20px;
+  max-width: 800px;
 }
 
 /*PINK CONTAINER */
 
 .inspo_temaer {
-  padding: 45px;
+  padding: 40px;
+  max-width: 1250px;
 }
 
 .inspo_ommig {
-  padding: 45px;
+  padding: 40px;
+  max-width: 600px;
 }
 
 /******************* MOBIL *****************/
@@ -559,17 +565,20 @@ footer {
     padding-inline: 20px;
   }
 
+  /*  02  */
   .billede_responsive_web {
     padding-left: 0px;
   }
+
   .kodestykke {
     padding-left: 38px;
   }
 
+  /*  03  */
   .billede_research {
     padding-left: 0px;
   }
-
+  /*  04  */
   .billede_rentegning {
     padding: 0px;
   }
@@ -578,13 +587,32 @@ footer {
     padding: 0px;
     padding-top: 20px;
   }
-
+  /*  05  */
   .billede_premiere {
     padding: 0px;
   }
 
   .redesgin {
     padding: 0px;
+  }
+
+  /*  06  */
+  /*HVID CONTAINER */
+  .inspo_layout {
+    padding: 0px;
+  }
+  .colorwheel {
+    padding: 0px;
+  }
+
+  /*PINK CONTAINER */
+
+  .inspo_temaer {
+    padding: 40px;
+  }
+
+  .inspo_ommig {
+    padding: 40px;
   }
 }
 
