@@ -133,7 +133,7 @@ li {
 /******************* TEKST *****************/
 p {
   font-family: "Varela", sans-serif;
-  padding-right: 25px;
+  padding-right: 15px;
 }
 
 h1 {
@@ -431,13 +431,13 @@ footer {
 @media (max-width: 600px) {
   .forside_tekst {
     position: absolute;
-    padding: 200px;
+    padding: 175px;
     transform: rotate(-180deg);
     font-size: 40px;
   }
 
   .forside_tekst2 {
-    padding: 150px;
+    padding: 125px;
     font-size: 40px;
   }
   .splash {
@@ -448,7 +448,7 @@ footer {
 
 /******************* FOOTER MOBIL *****************/
 @media (max-width: 600px) {
-  .mit_arbejde {
+  #mit_arbejde {
     font-size: 13px;
     color: white;
   }
@@ -461,8 +461,9 @@ footer {
     color: white;
   }
 
-  .mit_arbejde li {
+  #mit_arbejde li {
     padding: 4px;
+    padding-inline: 0px;
   }
 }
 
