@@ -286,28 +286,36 @@ footer {
   padding-left: 40px;
 }
 
+/** GENERELT **/
+
 .flex_col4 {
-  padding: 30px;
+  padding: 20px;
+}
+
+.flex_col1 {
+  padding: 20px;
+}
+
+.flex_col2 {
+  padding: 20px;
+  padding-right: 0px;
 }
 
 /******************* 03 UX *****************/
 /*HVID CONTAINER */
 .billede_research {
-  padding: 20px;
-  padding-top: 20px;
+  padding-left: 40px;
 }
 
 .prototype2 {
-  padding: 45px;
+  padding-left: 40px;
+  padding-top: 20px;
 }
 
 /*PINK CONTAINER */
 .prototype1 {
-  padding: 45px;
-}
-
-.flex_col4 {
   padding: 40px;
+  padding-top: 28px;
 }
 
 .kodestykke {
@@ -403,6 +411,18 @@ footer {
   img {
     padding-top: 20px;
   }
+
+  .flex_col4 {
+    padding: 20px;
+  }
+
+  .flex_col1 {
+    padding: 0px;
+  }
+
+  .flex_col2 {
+    padding: 0px;
+  }
 }
 
 /******************* SPLASH MOBIL *****************/
@@ -440,7 +460,7 @@ footer {
   }
 
   .mit_arbejde li {
-    padding: 5px;
+    padding: 4px;
   }
 }
 
@@ -485,6 +505,7 @@ footer {
 @media (max-width: 600px) {
   .container_hvid {
     display: grid;
+    padding-top: 20px;
   }
   .container_pink {
     display: grid;
@@ -509,11 +530,12 @@ footer {
   }
 
   .h1 {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
   .h2 {
     max-width: 25ch;
     padding-bottom: 20px;
+    padding-top: 40px;
   }
 
   .tekst_04 {
@@ -526,6 +548,10 @@ footer {
   }
   .kodestykke {
     padding-left: 38px;
+  }
+
+  .billede_research {
+    padding-left: 0px;
   }
 }
 
