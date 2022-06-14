@@ -367,6 +367,16 @@ footer {
   padding: 45px;
 }
 
+.billede_premiere {
+  padding: 0px;
+  padding-left: 20px;
+}
+
+.redesgin {
+  padding: 0px;
+  padding-left: 20px;
+}
+
 /******************* 06 PORTFOLIO *****************/
 /*HVID CONTAINER */
 .inspo_layout {
@@ -565,9 +575,16 @@ footer {
   }
 
   .introskaerm {
+    padding: 0px;
     padding-top: 20px;
-    padding-right: 0px;
-    padding-bottom: 0px;
+  }
+
+  .billede_premiere {
+    padding: 0px;
+  }
+
+  .redesgin {
+    padding: 0px;
   }
 }
 
