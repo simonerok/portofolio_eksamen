@@ -290,6 +290,7 @@ footer {
 
 .flex_col4 {
   padding: 20px;
+  padding-top: 35px;
 }
 
 .flex_col1 {
@@ -326,23 +327,27 @@ footer {
 /******************* 04 ANIMATION *****************/
 /*HVID CONTAINER */
 .billede_rentegning {
-  padding: 20px;
-  padding-top: 20px;
-  width: 80%;
-  height: 80%;
+  padding: 0px;
+  padding-left: 20px;
+  max-width: 1250px;
 }
 
 .introskaerm {
-  padding: 25px;
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-bottom: 0px;
 }
 
 /*PINK CONTAINER */
 .blyantskitse {
-  padding: 45px;
+  padding: 40px;
+  padding-top: 40px;
+  max-width: 1250px;
 }
 
 .diagram {
-  padding: 45px;
+  padding: 40px;
+  padding-top: 40px;
 }
 
 /******************* 05 INDHOLD *****************/
@@ -553,6 +558,16 @@ footer {
 
   .billede_research {
     padding-left: 0px;
+  }
+
+  .billede_rentegning {
+    padding: 0px;
+  }
+
+  .introskaerm {
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 0px;
   }
 }
 
