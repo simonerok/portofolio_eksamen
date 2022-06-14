@@ -282,6 +282,10 @@ footer {
   padding: 36px 36px 36px 0px;
 }
 
+.billede_responsive_web {
+  padding-left: 40px;
+}
+
 .flex_col4 {
   padding: 30px;
 }
@@ -304,6 +308,10 @@ footer {
 
 .flex_col4 {
   padding: 40px;
+}
+
+.kodestykke {
+  padding-left: 40px;
 }
 
 /******************* 04 ANIMATION *****************/
