@@ -217,32 +217,12 @@ footer {
 
 /******************* OM MIG *****************/
 
-/* .container_ommig {
-  display: flex;
-}
-.container_ommig > * {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  object-position: center;
-}
-.boks2 {
-  border: 2px solid black;
-  padding: 60px;
-  font-size: 1rem;
-  width: 50ch;
-}
-.article {
-  padding: 20px;
-} */
-
 .container_ommig {
   display: flex;
 }
 .PB {
-  padding: 20px 20px 20px 20px;
-  max-width: 50%;
+  padding: 0px 20px 20px 20px;
+  max-width: 1250px;
 }
 
 .underoverskrift {
@@ -490,16 +470,17 @@ footer {
 
 @media (max-width: 600px) {
   .container_ommig {
-    display: flex;
+    display: grid;
   }
   .PB {
     padding-right: 30px;
+    padding-left: 0px;
     min-width: 60px;
   }
 
   .underoverskrift {
-    font-size: 1.1rem;
-    padding-block: 10px;
+    font-size: 1.2rem;
+    padding-block: 20px;
     padding-inline: 2px;
     padding-top: 10px;
   }
@@ -513,7 +494,9 @@ footer {
   }
 
   .ommig_tekst {
-    padding-bottom: 15px;
+    padding: 15px;
+    padding-top: 15px;
+    padding-left: 0px;
   }
 
   h5 {
@@ -622,6 +605,6 @@ h5 {
   font-size: 1.2rem;
 }
 
-article {
+/* article {
   padding-top: 10px;
-}
+} */
