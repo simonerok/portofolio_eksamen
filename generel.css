@@ -431,13 +431,13 @@ footer {
 @media (max-width: 600px) {
   .forside_tekst {
     position: absolute;
-    padding: 175px;
+    padding: 125px;
     transform: rotate(-180deg);
     font-size: 40px;
   }
 
   .forside_tekst2 {
-    padding: 125px;
+    padding: 75px;
     font-size: 40px;
   }
   .splash {
